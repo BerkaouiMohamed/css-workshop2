@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background: linear-gradient(to bottom,rgb(0, 217, 255),blue);
+    justify-content: space-between;
+    padding: 0 50px;
+    position: relative;
+}
+
+nav img{
+    height: 80px;
+
+}
+
+nav .navContainer{
+
+width: 80%;
+display: flex;
+flex-direction: column;
+justify-content: end;
+align-items: end;
+
+}
+nav .navContainer .contact{
+    display: flex;
+    background-color: white;
+    height: 50px;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+   align-items: center;
+    gap: 40px;
+padding-left: 100px;
+
+
+   
+}
+nav .navContainer .contact::after{
+    content: "";
+    width: 50px;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(-40deg);
+    
+    top: -27px
+    ;
+    left: -27px;
+   
+}
+nav .navContainer .navlist{
+    display: flex;
+    padding-top: 50px;
+    gap: 50px;
+    margin-right: 100px;
+    color: white;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+
+}
+nav .navContainer .navlist p{
+    transition: all 0.3s linear;
+}
+nav .navContainer .navlist p:hover{
+    color: black;
+}
+
+
+section{
+    background:  url(https://img.freepik.com/free-photo/tropical-palm-leaves-pattern-background-monochrome-monstera-tree-foliage-decoration-design-plant-with-exotic-leaf-closeup_90220-1133.jpg?t=st=1723644233~exp=1723647833~hmac=52d34b26d540c4e5006cb154151b0bd7ac214e034c3a1657edd6497d1ccefe5d&w=900)  no-repeat  ;
+    background-size: cover;
+position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    overflow: hidden;
+}
+section .description{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+}
+section .description h1 span{
+    color: aqua;
+}
+
+section .description button{
+width: 150px;
+height: 50px;
+background-color: orangered;
+border: none;
+border-radius: 50px;
+color: white;
+}
+
+section form{
+    background-color: rgba(255, 255, 255, 0.63);
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+   
+}
+
+section form div{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    width: 180px;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.463);
+}
+
+form button{
+    width: 200px;
+    margin-top: 30px;
+    height: 50px;
+    background-color: orangered;
+    border: none;
+    color: white;
+   
+}
+section::after{
+    content: "";
+    width: 140vw;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    filter: blur(50px);
+
+}
+form::before{
+    content: "find your tour";
+    width: 150px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+.main {
+    padding-top: 20px;
+}
+.title{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+ 
+}
+.title main{
+    width: 300px;
+    height: 2px;
+    background-color: orange;
+}
+
+.main p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.boxes{
+ display: flex;
+ justify-content: space-evenly;
+ margin-top: 50px;
+}
+.box{
+display: flex;
+flex-direction: column;
+gap: 30px;
+width: 22%;
+text-align: center;
+align-items: center;
+}
+.box button{
+    width: 150px;
+    height: 40px;
+    background-color: orangered;
+    border: none;
+    border-radius :40px ;
+}
+
+.box img{
+    width: 100px;
+}
